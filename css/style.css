@@ -4,6 +4,9 @@
     padding: 0;
 }
 
-body::before {
-    content: 'Link al file .css corretto';
+.block {
+    height: 200px;
+    width: 200px;
+    border: 2px solid red;
+    outline: 2px solid white;
 }
