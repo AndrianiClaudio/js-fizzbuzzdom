@@ -4,9 +4,38 @@
     padding: 0;
 }
 
+html {
+    font-size: 100%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 80%;
+}
+
 .block {
-    height: 200px;
-    width: 200px;
-    border: 2px solid red;
-    outline: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 150px;
+    background-color: coral;
+    overflow: hidden;
+}
+
+div > span {
+    font-size: 1.5em;
+}
+
+/* classi colori a seconda del contenuto (da js) */
+.fizz-color {
+    background-color: yellow;
+}
+.buzz-color {
+    background-color: lightgreen;
+}
+.fizzbuzz-color {
+    background-color: aqua;
 }
