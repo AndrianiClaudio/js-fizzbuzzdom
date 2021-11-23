@@ -1,3 +1,10 @@
+:root {
+    --blue-color: 19, 137, 178;
+    --green-color: 11, 214, 161;
+    --pink-color: 240, 70, 111;
+    --yellow-color: 255, 209, 102;
+}
+
 * {
     box-sizing: border-box;
     margin: 0 auto;
@@ -7,7 +14,31 @@
 html {
     font-size: 100%;
 }
+body {
+    background-color: rgb(8, 59, 76);
+    min-width: 600px;
+}
 
+h1 {
+    margin: 2rem auto;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+}
+/* classi colori */
+.fizz-color {
+    background-color: rgb(var(--green-color));
+}
+.buzz-color {
+    background-color: rgb(var(--yellow-color));
+}
+.fizzbuzz-color {
+    background-color: rgb(var(--pink-color));
+}
+.base-color {
+    background-color: rgb(var(--blue-color));
+}
+/* classi container */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -21,21 +52,8 @@ html {
     align-items: center;
     min-height: 150px;
     min-width: 150px;
-    background-color: coral;
-    overflow: hidden;
 }
 
 div > span {
     font-size: 1.5em;
-}
-
-/* classi colori a seconda del contenuto (da js) */
-.fizz-color {
-    background-color: yellow;
-}
-.buzz-color {
-    background-color: lightgreen;
-}
-.fizzbuzz-color {
-    background-color: aqua;
 }
