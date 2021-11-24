@@ -9,17 +9,18 @@ for(let i = 1; i <= 100; i++) {
     div.append (span);
     // inserisce come ultimo figlio del container il nuovo div
     container.append(div);
+    let result = i;
     if (i % 3 == 0 && i % 5 == 0) { //numero divisibile sia per 3 che per 5
-        div.classList.add('fizzbuzz-color')
-        span.innerHTML = 'FizzBuzz';
+        result = 'FizzBuzz';
+        div.classList.add(`${result}-color`);
     } else if (i % 3 == 0) { //numero divisibile per 3
-        div.classList.add('fizz-color')
-        span.innerHTML = 'Fizz';
+        result = 'Fizz';
+        div.classList.add(`${result}-color`);
     } else if (i % 5 == 0) { //numero divisibile per 5
-        div.classList.add('buzz-color')
-        span.innerHTML = 'Buzz';
+        result = 'Buzz';
+        div.classList.add(`${result}-color`);
     } else { //numero non divisibile né per 3 né per 5
-        div.classList.add('base-color')
-        span.innerHTML = i;
+        div.classList.add('base-color');
     }
+    span.innerHTML = result;
 }

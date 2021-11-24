@@ -26,13 +26,13 @@ h1 {
     color: white;
 }
 /* classi colori */
-.fizz-color {
+.Fizz-color {
     background-color: rgb(var(--green-color));
 }
-.buzz-color {
+.Buzz-color {
     background-color: rgb(var(--yellow-color));
 }
-.fizzbuzz-color {
+.FizzBuzz-color {
     background-color: rgb(var(--pink-color));
 }
 .base-color {
